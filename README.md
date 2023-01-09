@@ -1,2 +1,1 @@
-# dados-atletas
-Exibe os dados do atleta
+Chamar o método toString() da classe Atleta para exibir todos os dados do mesmo
