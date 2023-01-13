@@ -1,3 +1,5 @@
+var atletas = [];
+
 class Atleta {
     constructor(nome, idade, peso, altura, notas) {
         this.nome = nome;
@@ -66,7 +68,15 @@ class Atleta {
             "\nMédia válida: " + this.obtemMediaValida());
     }
 }
-const atleta = new Atleta("Cesar Abascal",
-    30, 80, 1.70,
-    [10, 9.34, 8.42, 10, 7.88]);
-atleta.toString();
+
+function myFunction() {
+    const atleta = new Atleta(document.getElementById("nome").value,
+    document.getElementById("idade").value, document.getElementById("peso").value, document.getElementById("altura").value,
+    [document.getElementById("nota1").value, 
+    document.getElementById("nota2").value,
+    document.getElementById("nota3").value,
+    document.getElementById("nota4").value,
+    document.getElementById("nota5").value]);
+atletas.push(atleta);
+atletas.toString();
+  }
